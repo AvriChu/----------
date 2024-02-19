@@ -1,0 +1,100 @@
+@import '../variables';
+
+.second-senction-style {
+  padding: 80px 30px;
+  @media screen and (min-width: $bp-tablet) {
+    padding: 200px 150px;
+  }
+}
+.about-me-second {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 2;
+}
+.about-me-second-senction {
+  border-radius: 30px;
+  border: 2px solid #160114;
+  text-align: center;
+  height: 44px;
+  padding: 10px;
+  flex-shrink: 0;
+  color: #160114;
+  text-align: center;
+  font-family: 'Sofia Sans';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 100%;
+  @media screen and (min-width: $bp-tablet) {
+    width: 440px;
+    padding: 20px;
+    font-size: 30px;
+    height: 76px;
+  }
+}
+.about-me-second-senction-all-text {
+  color: #160114;
+  text-align: center;
+  font-family: 'Sofia Sans';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  border-radius: 20px;
+  border: 2px solid #160114;
+  padding: 10px;
+  width: 100%;
+  @media screen and (min-width: $bp-tablet) {
+    width: 440px;
+    padding: 20px;
+    font-size: 17px;
+  }
+}
+.about-me-second-senction-all-text span {
+  font-weight: 400;
+}
+.left-orhidea {
+  position: absolute;
+  left: 0;
+  margin-top: 150px;
+  animation: lOrh 2.7s infinite cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  display: none;
+  @media screen and (min-width: $bp-desktop) {
+    display: inline-block;
+  }
+}
+.right-orhidea {
+  position: absolute;
+  right: 0;
+  margin-top: 150px;
+  transform: scale(-1, 1);
+  display: none;
+  animation: ROrh 2.7s infinite cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  @media screen and (min-width: $bp-desktop) {
+    display: inline-block;
+  }
+}
+@keyframes lOrh {
+  0%,
+  100% {
+    rotate: 0deg;
+    transform: translate(-25px, 0px);
+  }
+  30% {
+    rotate: -3deg;
+    transform: translate(-5px, 20px);
+  }
+}
+@keyframes ROrh {
+  0%,
+  100% {
+    rotate: 0deg;
+    transform: translate(25px, 0px) scaleX(-1);
+  }
+  30% {
+    rotate: 3deg;
+    transform: translate(5px, 20px) scaleX(-1);
+  }
+}

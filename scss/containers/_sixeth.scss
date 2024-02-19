@@ -1,0 +1,24 @@
+.sixth-senction {
+  padding: 80px 30px;
+  @media screen and (min-width: $bp-tablet) {
+    padding: 150px;
+  }
+}
+.sixth-senction.background-wallpaper {
+  background-image: url('../img/trees-wallpaper.png');
+}
+.sixth-senction .right-orhidea {
+  margin-top: 0;
+}
+.sixth-senction .tittle-article {
+  width: 100%;
+  @media screen and (min-width: $bp-tablet) {
+    width: 250px;
+  }
+}
+.sixth-senction .all-about-me-text.left {
+  max-width: 100%;
+  @media screen and (min-width: $bp-tablet) {
+    max-width: 700px;
+  }
+}

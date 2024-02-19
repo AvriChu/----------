@@ -1,0 +1,67 @@
+@import 'variables';
+
+* {
+  margin: 0 auto;
+  color: #160114;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+svg {
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+div,
+.header-menu a {
+  margin: 0;
+}
+body {
+  background: #f1ecd9;
+}
+.hide {
+  opacity: 1;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.fadeOut {
+  opacity: 0;
+  transition: opacity 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.container {
+  padding: 0 30px;
+  @media screen and (min-width: $bp-tablet) {
+    padding: 0 150px;
+  }
+}
+/* Scroll button */
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  z-index: 10;
+  cursor: pointer;
+}
+/* Loading */
+.loading {
+  width: 100%;
+  height: 100%;
+  background-color: #fef2ff;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  opacity: 1;
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.loadHide {
+  opacity: 0;
+}

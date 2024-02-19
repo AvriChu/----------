@@ -1,0 +1,68 @@
+@import '../variables';
+
+.thright-senction-style {
+  padding: 20px 80px;
+  background: #afc9be;
+  @media screen and (min-width: $bp-tablet) {
+    padding: 35px 150px;
+  }
+}
+.all-text-thright li {
+  color: #160114;
+  text-align: center;
+  font-family: 'Sofia Sans';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  position: relative;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  padding: 10px;
+  width: 100%;
+  min-height: 40px;
+  @media screen and (min-width: $bp-desktop) {
+    background: transparent;
+    padding: 0;
+    font-size: 25px;
+  }
+}
+.all-text-thright li:after {
+  content: '';
+  display: none;
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: #160114;
+  transition: width 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  @media screen and (min-width: $bp-desktop) {
+    display: block;
+  }
+}
+.all-text-thright li:hover:after {
+  content: '';
+  width: 100%;
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 2px;
+  background-color: #160114;
+  transition: width 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  @media screen and (min-width: $bp-desktop) {
+    display: block;
+  }
+}
+.all-text-thright {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 10px;
+  @media screen and (min-width: $bp-tablet) {
+    gap: 20px;
+    flex-direction: row;
+  }
+}
